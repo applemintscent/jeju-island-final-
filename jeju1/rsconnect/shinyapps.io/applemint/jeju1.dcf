@@ -1,0 +1,13 @@
+name: jeju1
+title:
+username:
+account: applemint
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7862337
+bundleId: 6631484
+url: https://applemint.shinyapps.io/jeju1/
+when: 1670934796.08043
+lastSyncTime: 1670934796.08044
+asMultiple: FALSE
+asStatic: FALSE
