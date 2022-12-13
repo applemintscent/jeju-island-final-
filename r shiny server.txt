@@ -1,0 +1,28 @@
+putty 명령어 목록(putty라는 프로그램을 통해 ssh 서버 접속: 공개 키 방식의 암호 방식을 사용하여 원격지 시스템에 접근하여 암호화 된 메시지를 전송. 쉽게 말해, 보안을 위해 다른 시스템에 로그인할 때, 정보가 유출되지 않게 하는거), putty 컴퓨터에 설치된 명령 프롬프트랑 비슷한 역할, 파이썬으로 해도 가능 
+
+1. sudo -i (sudo:superuser do 의 약어, 사용자의 권한을 직접 조정, 즉, 쉽게 말해 슈퍼유저로서 프로그램을 구동하기 위해 설정)
+
+2. sudo apt-get update: 설치된 패키지 업그레이드
+
+3. sudo su -c"R -e\"install.packages('shiny', repos='http://cran.studio.com/')"": R 홈페이지에서 필요한 패키지들을 설치
+
+4. sudo apt-get install gdebi-core: R studio 서버 패키지 설치 
+
+5. wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.9.923-amd64.deb: r studio 서버로부터 콘텐츠를 지금 실행중인 내 웹서버(ubuntu)로 가져옴
+
+6. sudo gdebi shiny-server-1.5.9.923-amd64.deb: 설치된 r shiny 서버 불러오기 
+
+
+
+이제 shiyapps에서 제공하는 웹 앱 배포 시스템 이용
+
+1. www.shinyapps.io 접속 및 회원가입
+
+2. 이제 만들어둔 r shiny파일에 코드 추가로 입력
+- install.packages('rsconnect') 
+
+3. run app옆에 있는 publish 버튼 클릭
+
+4. r shiny 서버를 연결할 수 있게 shinypaas홈페이지에 나와있는 개인 서버키를 입력하여 접속한다. 
+
+5. 웹페이지 정상적으로 출력
